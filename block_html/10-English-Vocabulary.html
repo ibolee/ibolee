@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"英语十大词汇类型","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"名词noun n.","children":[{"type":"list_item","depth":2,"payload":{"lines":[2,5]},"content":"定义：名词是指人或物，<br>\n分为可数名词和不可数名词，<br>\n可数名词带复数s,es等等。"}]},{"type":"heading","depth":1,"payload":{"lines":[5,6]},"content":"动词verb v.","children":[{"type":"list_item","depth":2,"payload":{"lines":[6,8]},"content":"实义动词，定义：有实际含义的<br>\n动词，比如：run、jump;"},{"type":"list_item","depth":2,"payload":{"lines":[8,13]},"content":"系动词，定义：系动词的系是<br>\n“联系”的意思，把主语跟其特征<br>\n或状态联系在一起。比如：<br>\nshe <strong>is</strong> beautiful.（这里<br>\nis是系动词。）"},{"type":"list_item","depth":2,"payload":{"lines":[13,17]},"content":"情态动词，定义：表示主语情<br>\n感态度的词）愿意做某事，应该<br>\n做某事，能够做某事，可能做某<br>\n事，必须做某事…"},{"type":"list_item","depth":2,"payload":{"lines":[17,19]},"content":"助动词，定义：帮助实义动词表<br>\n达更多含义。"}]},{"type":"heading","depth":1,"payload":{"lines":[19,20]},"content":"代词 pronoun pron.","children":[{"type":"list_item","depth":2,"payload":{"lines":[20,27]},"content":"定义：代替人或事物的词叫代词。<br>\n代词分为：人称代词 （分为主格和<br>\n宾格）， 形容性物主代词，名词性<br>\n物主代词，反身代词。以上4种是常<br>\n用代词。以下是不常用代词：不定<br>\n代词，指示代词，相互代词，疑问代<br>\n词，关系代词，连接代词。"}]},{"type":"heading","depth":1,"payload":{"lines":[27,28]},"content":"数词numeral num.","children":[{"type":"list_item","depth":2,"payload":{"lines":[28,31]},"content":"定义：表示数量的词，分为基数词<br>\n(ONE、TWO、THREE)序数词（1st,<br>\n2nd..)"}]},{"type":"heading","depth":1,"payload":{"lines":[31,32]},"content":"冠词article art.","children":[{"type":"list_item","depth":2,"payload":{"lines":[32,36]},"content":"定义：冠在名词之前的词。比如：<br>\nthe box.这个盒子。the是冠词。<br>\n冠词分为定冠词：the,不定冠词<br>\na,an,零冠词。"}]},{"type":"heading","depth":1,"payload":{"lines":[36,37]},"content":"介词preposition prep.","children":[{"type":"list_item","depth":2,"payload":{"lines":[37,41]},"content":"定义：放在前面的词一一放在名<br>\n词或代词前面的词。比如：（<strong>in</strong>  <br>\nthe room, <strong>on</strong> the desk.in和<br>\non就是介词。）"}]},{"type":"heading","depth":1,"payload":{"lines":[41,42]},"content":"形容词adjective adj.","children":[{"type":"list_item","depth":2,"payload":{"lines":[42,46]},"content":"定义：用来形容人或物的，什么<br>\n样的人或什么样的东西。比如：I<br>\nthink I'm a <strong>lucky</strong> guy.<br>\n(lucky 就是形容词)"}]},{"type":"heading","depth":1,"payload":{"lines":[46,47]},"content":"连词conjunction conj.","children":[{"type":"list_item","depth":2,"payload":{"lines":[47,50]},"content":"定义: 连词：起到连接作用的词。<br>\n分为并列连词：（and、but）和从<br>\n属连词。<strong>从属连词</strong> 分主次先后。"}]},{"type":"heading","depth":1,"payload":{"lines":[50,51]},"content":"副词adverb adv.","children":[{"type":"list_item","depth":2,"payload":{"lines":[51,55]},"content":"定义：用来修饰动词，怎么样的<br>\n做了一件事。比如：I think i can<br>\nlearn thing <strong>quickly</strong>.(quickly<br>\n就是副词。)"}]},{"type":"heading","depth":1,"payload":{"lines":[55,56]},"content":"感叹词interjection interj.","children":[{"type":"list_item","depth":2,"payload":{"lines":[56,57]},"content":"定义：oh,hey,这些感叹语气词。"}]}]},{})</script>
+</body>
+</html>
